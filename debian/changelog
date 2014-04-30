@@ -1,0 +1,5 @@
+python-flask-peewee (0.6.6) precise; urgency=low
+
+  * Debianization
+
+ -- Aleksey Rembish <alex@rembish.org>  Wed, 30 Apr 2014 15:41:09 +0200

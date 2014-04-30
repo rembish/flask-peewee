@@ -1,0 +1,7 @@
+build
+debian/files
+debian/python-flask-peewee*
+test.db
+*.pyc
+*.egg
+*.egg-info

@@ -1,20 +1,19 @@
-import sys
+#!/usr/bin/env python
 from setuptools import setup, find_packages
 
-requirements = ['Flask', 'werkzeug', 'jinja2', 'peewee>2.0.6', 'wtforms', 'wtf-peewee']
-if sys.version_info[:2] < (2, 6):
-    requirements.append('simplejson')
 
 setup(
     name='flask-peewee',
-    version='0.6.5',
-    url='http://github.com/coleifer/flask-peewee/',
+    version='0.6.6',
+    url='https://github.com/rembish/flask-peewee',
     license='BSD',
     author='Charles Leifer',
     author_email='coleifer@gmail.com',
-    description='Peewee integration for flask',
+    maintainer='Aleksey Rembish',
+    maintainer_email='alex@rembish.org',
+    description='Peewee integration for Flask',
     packages=find_packages(),
-    package_data = {
+    package_data={
         'flask_peewee': [
             'static/*/*.css',
             'static/*/*.js',
@@ -29,7 +28,7 @@ setup(
     },
     zip_safe=False,
     platforms='any',
-    install_requires=requirements,
+    install_requires=['Flask', 'peewee>2.0.6', 'wtf-peewee'],
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
